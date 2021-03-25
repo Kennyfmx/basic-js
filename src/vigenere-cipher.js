@@ -6,7 +6,7 @@ class VigenereCipheringMachine {
   }
 
   throwError(message, key) {
-    if ((message !== 'string' || key !== 'string') || (!message || !key)) {
+    if ((typeof (message) !== 'string' || typeof (key) !== 'string') || (!message || !key)) {
       throw new Error('Error: Arguments must be a strings');
     }
   }
