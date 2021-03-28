@@ -1,16 +1,16 @@
 const CustomError = require("../extensions/custom-error");
 
 module.exports = function repeater(str, options) {
-  if (options.separator === undefined || options.separator === null) {
+  if (options.separator === undefined) {
     options.separator = '+';
   }
-  if (options.additionSeparator === undefined || options.additionSeparator === null) {
+  if (options.additionSeparator === undefined) {
     options.additionSeparator = '|';
   }
-  if (options.repeatTimes === undefined || options.repeatTimes === null) {
+  if (options.repeatTimes === undefined) {
     options.repeatTimes = 1;
   }
-  if (options.additionRepeatTimes === undefined || options.additionRepeatTimes=== null) {
+  if (options.additionRepeatTimes === undefined) {
     options.additionRepeatTimes = 1;
   }
 
